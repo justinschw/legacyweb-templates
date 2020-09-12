@@ -1,0 +1,27 @@
+{
+  "name": "legacyweb-templates",
+  "version": "1.0.0",
+  "description": "Basic templates for generating LegacyWeb pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinschw/legacyweb-templates.git"
+  },
+  "keywords": [
+    "retro",
+    "web"
+  ],
+  "author": "Justin Schwartzbeck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinschw/legacyweb-templates/issues"
+  },
+  "homepage": "https://github.com/justinschw/legacyweb-templates#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  }
+}
