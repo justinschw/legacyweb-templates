@@ -1,0 +1,28 @@
+html
+  head
+    title #{title}
+  body
+    table(height="100%",width="100%")
+      tr
+      td(width=75)
+        each link in nav
+          a(class='button',href=link.href) #{link.text}
+          br
+      td
+        if header.type == 'text'
+          h1 #{header.text}
+        else if header.type == 'image'
+          img(src=header.src)
+        br
+        each part in parts
+          if part.type == 'form'
+            form(action=part.action, method='post')
+              p
+                each field in part.inputs
+                  if field.type != 'submit'
+                    label(for=field.id) #{field.label}
+                    input(type=field.type, name=field.id, id=field.id, length=field.length)
+                  else
+                    input(type=field.type, name=field.id, id=field.id, length=field.length, value=field.label)
+          else if part.type == 'paragraph'
+            p #{part.text}
